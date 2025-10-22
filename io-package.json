@@ -1,0 +1,109 @@
+{
+    "common": {
+        "name": "knxbaos",
+        "version": "0.0.1",
+        "news": {
+            "0.0.1": {
+                "en": "initial release",
+                "de": "Erstveröffentlichung",
+                "ru": "Начальная версия",
+                "pt": "lançamento inicial",
+                "nl": "Eerste uitgave",
+                "fr": "Première version",
+                "it": "Versione iniziale",
+                "es": "Versión inicial",
+                "pl": "Pierwsze wydanie",
+                "uk": "Початкова версія",
+                "zh-cn": "首次出版"
+            }
+        },
+        "title": "KNX BAOS",
+        "titleLang": {
+            "en": "KNX BAOS",
+            "de": "KNX BAOS",
+            "ru": "KNX БАОС",
+            "pt": "KNX BAOS",
+            "nl": "KNX BAOS",
+            "fr": "KNX BAOS",
+            "it": "KNX BAOS",
+            "es": "BAOS KNX",
+            "pl": "KNX BAOS",
+            "uk": "KNX BAOS",
+            "zh-cn": "KNX宝OS"
+        },
+        "desc": {
+            "en": "Adapter, der die KNX Kommunikation über ein BAOS IP Gateway ermöglicht.",
+            "de": "Adapter, der die KNX-Kommunikation über ein BAOS IP Gateway ermöglicht.",
+            "ru": "Адаптер для связи KNX или IP-шлюза BAOS работает.",
+            "pt": "Adaptador que permite a comunicação KNX através de um gateway IP BAOS.",
+            "nl": "Adapter voor de KNX-communicatie over een BAOS IP-gateway ermöglicht.",
+            "fr": "Adaptateur permettant la communication KNX avec une passerelle IP BAOS.",
+            "it": "Adattatore per la comunicazione KNX su un gateway IP BAOS.",
+            "es": "Adaptador para la comunicación KNX sobre una puerta de enlace IP BAOS.",
+            "pl": "Adapter, który może być użyty do komunikacji KNX w BAOS IP Gateway.",
+            "uk": "Адаптер комунікації KNX через IP-шлюз BAOS став несправним.",
+            "zh-cn": "适配器是 BAOS IP 网关中的 KNX 通讯适配器。"
+        },
+        "authors": [
+            "Timo Schlegel <tschlegel@photonium.de>"
+        ],
+        "keywords": [
+            "knx",
+            "baos"
+        ],
+        "license": "MIT",
+        "platform": "Javascript/Node.js",
+        "main": "main.js",
+        "icon": "knxbaos.png",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/Timo Schlegel/ioBroker.knxbaos/main/admin/knxbaos.png",
+        "readme": "https://github.com/Timo Schlegel/ioBroker.knxbaos/blob/main/README.md",
+        "loglevel": "info",
+        "tier": 3,
+        "mode": "daemon",
+        "type": "iot-systems",
+        "compact": true,
+        "connectionType": "local",
+        "dataSource": "push",
+        "adminUI": {
+            "config": "json"
+        },
+        "dependencies": [
+            {
+                "js-controller": ">=3.3.22"
+            }
+        ],
+        "globalDependencies": [
+            {
+                "admin": ">=5.1.13"
+            }
+        ]
+    },
+    "native": {
+        "port": 12004
+    },
+    "objects": [],
+    "instanceObjects": [
+        {
+            "_id": "info",
+            "type": "channel",
+            "common": {
+                "name": "Information"
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.connection",
+            "type": "state",
+            "common": {
+                "role": "indicator.connected",
+                "name": "Device or service connected",
+                "type": "boolean",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {}
+        }	
+	]
+}

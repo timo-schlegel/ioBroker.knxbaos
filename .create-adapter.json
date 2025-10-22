@@ -1,0 +1,42 @@
+{
+    "cli": true,
+    "target": "directory",
+    "adapterName": "knxbaos",
+    "title": "KNX BAOS",
+    "description": "Adapter, der die KNX Kommunikation über ein BAOS IP Gateway ermöglicht.",
+    "keywords": [
+        "knx",
+        "baos"
+    ],
+    "expert": "no",
+    "features": [
+        "adapter"
+    ],
+    "adminFeatures": [],
+    "type": "protocols",
+    "startMode": "daemon",
+    "connectionType": "local",
+    "dataSource": "push",
+    "connectionIndicator": "no",
+    "language": "JavaScript",
+    "nodeVersion": "18",
+    "adminUi": "json",
+    "tools": [
+        "ESLint",
+        "type checking"
+    ],
+    "releaseScript": "yes",
+    "devServer": "no",
+    "indentation": "Space (4)",
+    "quotes": "double",
+    "es6class": "yes",
+    "authorName": "Timo Schlegel",
+    "authorGithub": "Timo Schlegel",
+    "authorEmail": "tschlegel@photonium.de",
+    "gitRemoteProtocol": "HTTPS",
+    "gitCommit": "no",
+    "defaultBranch": "main",
+    "license": "MIT License",
+    "dependabot": "yes",
+    "creatorVersion": "2.6.1"
+}
