@@ -1,0 +1,98 @@
+{
+    "i18n": true,
+    "type": "tabs",
+    "items": {
+        "_connection": {
+            "type": "panel",
+            "label": "Verbindung",
+            "items": {
+                "ipaddr": {
+                    "type": "text",
+                    "label": {
+						"en": "IP address",
+						"de": "IP-Addresse"
+					},
+                    "newLine": true,
+					"sm": 12,
+					"md": 6,
+					"lg": 4
+                },
+				"port": {
+					"type": "number",
+					"label": {
+						"en": "port",
+						"de": "Port"
+					},
+					"sm": 12,
+					"md": 6,
+					"lg": 4,					
+					"min": 1,
+					"max": 65565,
+					"default": 12004
+				}
+           }
+        },
+        "_datapoints": {
+            "type": "panel",
+            "label": "Datenpunkte",
+            "items": {
+                "datapoints": {
+                    "type": "table",
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 12,
+                    "label": {
+						"en": "datapoints",
+						"de": "Datenpunkte"
+					},
+                    "items": [
+                        {
+                            "type": "number",
+                            "min": 1,
+                            "max": 1000,
+                            "attr": "ID",
+                            "width": "5%",
+                            "title": {
+                                "en": "ID",
+                                "de": "ID"
+                            },
+                            "filter": true,
+                            "sort": true
+                        },
+                        {
+                            "type": "select",
+                            "attr": "datatype",
+                            "width": "15%",
+                            "title": {
+                                "en": "type",
+                                "de": "Datenpunkttyp"
+                            },
+                            "filter": true,
+                            "sort": true,
+                            "options": [
+                                {"label": "1.* 1-Bit", "value": "DPT1"},
+								{"label": "1.001 Schalten", "value": "DPT1.001"},
+								{"label": "9.* 2-Byte Gleitkommawert", "value": "DPT9"},
+								{"label": "9.001 Temperatur (°C)", "value": "DPT9.001"},
+                                {"label": "12.* 4-Byte vorzeichenlos", "value": "DPT12"},
+                                {"label": "14.* 4-byte Gleitkommawert", "value": "DPT14"},
+								{"label": "16.* Text", "value": "DPT16"}
+                            ]
+                        },
+                        {
+                            "type": "text",
+                            "attr": "description",
+                            "width": "25%",
+                            "title": {
+                                "en": "description",
+                                "de": "Beschreibung"
+                            },
+                            "filter": true,
+                            "sort": true
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}
